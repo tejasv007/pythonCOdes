@@ -29,5 +29,28 @@ mycursor=mydb.cursor()
 # mycursor.execute(cmdSel)
 # myres=mycursor.fetchall()
 # print(myres)
-# ---- 
+# ---- can insert many record7️⃣
+# insert1="insert into new(name, age) values(%s,%s)"
+# dbList=[("rani",30),("gita",23),("hira",21)]
+# mycursor.executemany(insert1,dbList)
+# mydb.commit()
+# ---- update record8️⃣
+# upRec="update bittu.new set age=%s where name= %s"
+# setVal=(24,"rani")
+# mycursor.execute(upRec,setVal)
+# mydb.commit()
+# print(mycursor.re)
+# ----delete record9️⃣
+# delRec="delete from bittu.new where name=%s"
+# dbValue=("gita",)
+# mycursor.execute(delRec,dbValue)
+# mydb.commit()
+# --- delete a table🔟
+# cmd="drop table new"
+# mycursor.execute(cmd)
+# mydb.commit()
+# ----delete whole data of a table but table is intact1️⃣1️⃣
+# cmd="truncate table bittu.new"
+# mycursor.execute(cmd)
+# mydb.commit()
 print("----my file is working------😊😊")
